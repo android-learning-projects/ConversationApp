@@ -28,19 +28,15 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <com.google.android.material.card.MaterialCardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:cardCornerRadius="50dp"
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="1dp"
                     app:strokeWidth="1dp"
-                    app:strokeColor="@android:color/darker_gray">
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:background="@android:color/holo_red_dark"
-                        android:src="@android:color/holo_red_dark" />
-                </com.google.android.material.card.MaterialCardView>
-
+                    app:strokeColor="@android:color/darker_gray"
+                    app:shapeAppearanceOverlay="@style/circleImageView"
+                    android:src="@android:color/holo_red_dark"
+                   />
 
                 <TextView
                     android:layout_width="wrap_content"
