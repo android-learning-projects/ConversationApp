@@ -25,18 +25,22 @@ public class MainActivity extends AppCompatActivity {
 
         List<Data> list = new ArrayList<>();
 
-        list.add(new Data("LEFT", "EXPIRED"));
-        list.add(new Data("RIGHT", "SUCCESS"));
-        list.add(new Data("LEFT", "PENDING"));
 
-        list.add(new Data("LEFT", "EXPIRED"));
-        list.add(new Data("RIGHT", "SUCCESS"));
         list.add(new Data("LEFT", "PENDING"));
+        list.add(new Data("RIGHT", "SUCCESS"));
+        list.add(new Data("LEFT", "EXPIRED"));
+
+        list.add(new Data("LEFT", "PENDING"));
+        list.add(new Data("RIGHT", "SUCCESS"));
+        list.add(new Data("LEFT", "EXPIRED"));
+
+
 
         conversationalAdapter.update(list);
         recyclerView = findViewById(R.id.recyclerView);
 
         recyclerView.setAdapter(conversationalAdapter);
+        recyclerView.scrollToPosition(0);
 
 
     }

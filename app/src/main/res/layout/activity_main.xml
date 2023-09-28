@@ -22,6 +22,8 @@
             android:layout_height="match_parent"
             android:paddingTop="4dp"
             android:paddingBottom="10dp"
+            app:reverseLayout="true"
+            app:stackFromEnd="true"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:listitem="@layout/layout_conversional_item" />
     </FrameLayout>
