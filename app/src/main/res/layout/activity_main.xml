@@ -9,7 +9,7 @@
 
     tools:context=".MainActivity">
 
-    <include layout="@layout/layout_header" />
+    <include layout="@layout/layout_convesational_header" />
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -23,8 +23,8 @@
             android:paddingTop="4dp"
             android:paddingBottom="10dp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/layout_conversion_item" />
+            tools:listitem="@layout/layout_conversional_item" />
     </FrameLayout>
 
-    <include layout="@layout/layout_conversion_footer" />
+    <include layout="@layout/layout_conversional_footer" />
 </LinearLayout>

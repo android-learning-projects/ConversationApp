@@ -13,7 +13,7 @@ import com.conversation.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
+public class ConversationalAdapter extends RecyclerView.Adapter<ConversationalAdapter.MyViewHolder> {
 
     private List<Data> list = new ArrayList<>();
 
@@ -25,13 +25,13 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
     @NonNull
     @Override
-    public CustomAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_conversion_item, parent, false);
+    public ConversationalAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_conversional_item, parent, false);
         return new MyViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull CustomAdapter.MyViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ConversationalAdapter.MyViewHolder holder, int position) {
 
         holder.bind(list.get(position), position);
     }

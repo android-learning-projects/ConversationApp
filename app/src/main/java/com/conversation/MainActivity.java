@@ -5,7 +5,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
-import com.conversation.conversion.CustomAdapter;
+import com.conversation.conversion.ConversationalAdapter;
 import com.conversation.conversion.Data;
 
 import java.util.ArrayList;
@@ -14,14 +14,14 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
-    CustomAdapter customAdapter;
+    ConversationalAdapter conversationalAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        customAdapter = new CustomAdapter();
+        conversationalAdapter = new ConversationalAdapter();
 
         List<Data> list = new ArrayList<>();
 
@@ -33,10 +33,10 @@ public class MainActivity extends AppCompatActivity {
         list.add(new Data("RIGHT", "SUCCESS"));
         list.add(new Data("LEFT", "PENDING"));
 
-        customAdapter.update(list);
+        conversationalAdapter.update(list);
         recyclerView = findViewById(R.id.recyclerView);
 
-        recyclerView.setAdapter(customAdapter);
+        recyclerView.setAdapter(conversationalAdapter);
 
 
     }
